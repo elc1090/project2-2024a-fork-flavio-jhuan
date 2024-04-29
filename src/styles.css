@@ -20,6 +20,9 @@ body {
 .margin-2 {
   margin: 2rem;
 }
+.message {
+  font-size: clamp(1rem, 2vw, 1.0rem);
+}
 
 .my-button {
   padding: var(--cds-global-space-9) 0 !important;
@@ -28,4 +31,8 @@ body {
 .my-button-container{
   gap: var(--cds-global-space-5) !important;
 
+}
+.radio.btn  {
+  padding: var(--cds-global-space-8) var(--cds-global-space-12) !important;
+  margin-bottom: 0.3rem;
 }
