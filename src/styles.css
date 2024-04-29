@@ -32,7 +32,21 @@ body {
   gap: var(--cds-global-space-5) !important;
 
 }
-.radio.btn  {
-  padding: var(--cds-global-space-8) var(--cds-global-space-12) !important;
-  margin-bottom: 0.3rem;
+.radio.btn input[type="radio"]:checked + label {
+  background-color: #007bff; /
+  color: #fff; 
 }
+
+.radio.btn label {
+  cursor: pointer;
+  padding: var(--cds-global-space-8) var(--cds-global-space-12);
+}
+
+.radio.btn {
+  margin-bottom: 0.4rem;
+}
+
+.radio.btn input[type="radio"] {
+  display: none; /* Oculta o botão de rádio padrão */
+}
+
