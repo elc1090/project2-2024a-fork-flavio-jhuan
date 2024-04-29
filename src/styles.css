@@ -20,3 +20,11 @@ body {
 .margin-2 {
   margin: 2rem;
 }
+.message {
+  font-size: clamp(1rem, 2vw, 1.0rem);
+}
+
+.radio.btn  {
+  padding: var(--cds-global-space-8) var(--cds-global-space-12) !important;
+  margin-bottom: 0.3rem;
+}

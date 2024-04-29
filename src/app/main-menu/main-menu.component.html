@@ -1,39 +1,49 @@
-<div class="clr-row margin-1">
-  <div class="clr-col-12 align-center">
-    <span cds-text="message">
+
+<div class="clr-row margin-2 justify-content-center">
+  <div class="clr-col-12 align-center" style="margin-bottom: 1.0rem;">
+    <span cds-text="title">
       Ignite your curiosity and dominate the tech world, becoming the ultimate champion of digital knowledge!
     </span>
   </div>
 </div>
-<div class="clr-row margin-2">
+<div class="clr-row margin-2 justify-content-center">
   <div class="clr-col-12 align-center">
-    <span cds-text="body-rg">Choose the difficulty:</span>
+    <span cds-text="subsection">Choose the difficulty:</span>
   </div>
 </div>
-<div class="clr-row margin-2">
+<div class="clr-row margin-2 justify-content-center">
   <div class="clr-col-12 align-center">
-    <div class="btn-group">
-      <div class="radio btn">
-        <input type="radio" value="easy" id="easy" [(ngModel)]="difficulty">
-        <label for="easy">Easy</label>
-      </div>
-      <div class="radio btn">
-        <input type="radio" value="medium" id="medium" [(ngModel)]="difficulty">
-        <label for="medium">Medium</label>
-      </div>
-      <div class="radio btn">
-        <input type="radio" value="hard" id="hard" [(ngModel)]="difficulty">
-        <label for="hard">Hard</label>
+    <div class="btn-group" role="group">
+      <div class="clr-row gap-2">
+        <div class="clr-col-12 clr-col-sm-4">
+          <div class="radio btn btn-block">
+            <input type="radio" value="easy" id="easy" [(ngModel)]="difficulty">
+            <label for="easy">Easy</label>
+          </div>
+        </div>
+        <div class="clr-col-12 clr-col-sm-4">
+          <div class="radio btn btn-block">
+            <input type="radio" value="medium" id="medium" [(ngModel)]="difficulty">
+            <label for="medium">Medium</label>
+          </div>
+        </div>
+        <div class="clr-col-12 clr-col-sm-4">
+          <div class="radio btn btn-block">
+            <input type="radio" value="hard" id="hard" [(ngModel)]="difficulty">
+            <label for="hard">Hard</label>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<div class="clr-row margin-2">
+
+<div class="clr-row margin-2 justify-content-center">
   <div class="clr-col-12 align-center">
-    <span cds-text="body-rg">Choose the category:</span>
+    <span cds-text="subsection">Choose the category:</span>
   </div>
 </div>
-<div class="clr-row margin-2">
+<div class="clr-row margin-2 justify-content-center">
   <div class="clr-col-12 align-center">
     @if (loading) {
       <div>
@@ -53,7 +63,7 @@
     </div>
   </div>
 </div>
-<div class="clr-row">
+<div class="clr-row justify-content-center">
   <div class="clr-col-12 align-center">
     @if (hasError) {
       <clr-alert [clrAlertType]="'warning'">
