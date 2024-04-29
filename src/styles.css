@@ -20,3 +20,12 @@ body {
 .margin-2 {
   margin: 2rem;
 }
+
+.my-button {
+  padding: var(--cds-global-space-9) 0 !important;
+}
+
+.my-button-container{
+  gap: var(--cds-global-space-5) !important;
+
+}

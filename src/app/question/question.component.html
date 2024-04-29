@@ -3,12 +3,12 @@
     <span cds-text="message">{{ question.question }}</span>
   </div>
 </div>
-<div class="clr-row margin-2">
+<div class="clr-row margin-2 my-button-container">
   @for (answer of question.answers | keyvalue; track answer) {
     @if (!question.multiple_correct_answers) {
       @if (answer.value != null) {
         <div class="clr-col-12">
-          <button class="btn btn-block"
+          <button class="btn btn-block my-button"
                   [class.btn-success]="submitted && answer.key === selected && answer.key === question.correct_answer"
                   [class.btn-danger]="submitted && answer.key === selected && answer.key !== question.correct_answer"
                   [disabled]="submitted && answer.key !== selected"
